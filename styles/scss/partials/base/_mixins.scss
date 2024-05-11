@@ -1,0 +1,144 @@
+<<<<<<< HEAD
+@mixin contenedor-header($disp, $align, $mar){
+    display: $disp;
+    align-items: $align;
+    @if $mar != 'null'{margin: $mar}
+    @else{margin: auto;}
+}
+
+@mixin contenedor-flex ($disp, $flex-dir, $pos, $width, $height){
+    display: $disp;
+    flex-direction: $flex-dir;
+    position: $pos;
+    width: $width;
+    height: $height;
+}
+
+@mixin cont-flex-layout($just-content, $align-items, $text-align){
+    justify-content: $just-content;
+    align-items: $align-items;
+    text-align: $text-align;
+}
+
+@mixin titulos-ppal($col-tit-ppal, $fs-ppal){
+    color: $col-tit-ppal;
+    font-size: $fs-ppal;
+    text-shadow: 2px 2px 2px black;
+}
+
+@mixin titulo-seccion{
+    text-align: center;
+    color: $color-titulos;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+
+@mixin card($position, $height, $margin){
+    position: $position;
+    height: $height;
+    margin: $margin;
+}
+
+@mixin boton ($w, $h, $bg, $bor, $bor-rad, $col, $fw){
+    width: $w;
+    height: $h;
+    background-color: $bg;
+    border: $bor;
+    border-radius: $bor-rad;
+    color: $col;
+    font-weight: $fw;
+}
+
+@mixin disMouse{
+    font-weight: bold;
+    color: $color-span;
+    font-style: italic;
+}
+
+@mixin resaltarFrase($decoration, $transform, $style){
+    text-decoration: $decoration;
+    text-transform: $transform;
+    font-style: $style;
+}
+
+@mixin elemento-absolute($br, $top, $bottom, $left, $right, $z){
+    position: absolute;
+    border-radius: $br;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    z-index: $z;
+=======
+@mixin contenedor-header($disp, $align, $mar){
+    display: $disp;
+    align-items: $align;
+    @if $mar != 'null'{margin: $mar}
+    @else{margin: auto;}
+}
+
+@mixin contenedor-flex ($disp, $flex-dir, $pos, $width, $height){
+    display: $disp;
+    flex-direction: $flex-dir;
+    position: $pos;
+    width: $width;
+    height: $height;
+}
+
+@mixin cont-flex-layout($just-content, $align-items, $text-align){
+    justify-content: $just-content;
+    align-items: $align-items;
+    text-align: $text-align;
+}
+
+@mixin titulos-ppal($col-tit-ppal, $fs-ppal){
+    color: $col-tit-ppal;
+    font-size: $fs-ppal;
+    text-shadow: 2px 2px 2px black;
+}
+
+@mixin titulo-seccion{
+    text-align: center;
+    color: $color-titulos;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+
+@mixin card($position, $height, $margin){
+    position: $position;
+    height: $height;
+    margin: $margin;
+}
+
+@mixin boton ($w, $h, $bg, $bor, $bor-rad, $col, $fw){
+    width: $w;
+    height: $h;
+    background-color: $bg;
+    border: $bor;
+    border-radius: $bor-rad;
+    color: $col;
+    font-weight: $fw;
+}
+
+@mixin disMouse{
+    font-weight: bold;
+    color: $color-span;
+    font-style: italic;
+}
+
+@mixin resaltarFrase($decoration, $transform, $style){
+    text-decoration: $decoration;
+    text-transform: $transform;
+    font-style: $style;
+}
+
+@mixin elemento-absolute($br, $top, $bottom, $left, $right, $z){
+    position: absolute;
+    border-radius: $br;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    z-index: $z;
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

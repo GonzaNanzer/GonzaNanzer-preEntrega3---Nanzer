@@ -1,0 +1,102 @@
+<<<<<<< HEAD
+.ePe__contenedor{
+    background-image: linear-gradient(to bottom, $gradiente-1, $gradiente-4);
+    height: auto;
+
+    & .ePe__titulo{
+        @include titulo-seccion;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    & .ePe__contenido{
+        @include contenedor-flex (flex, row, auto, 100%, 100%);
+        @include cont-flex-layout(space-around, center, left);
+
+        & .ePe__texto{
+            width: 40%;
+            color: soften($color-contenido,5);
+            font-size: larger;
+            
+
+            & .disMouse{
+                color: darken($color-span,15);
+            }
+
+            & .fraseResaltada{
+                @include resaltarFrase(underline, none, italic);
+            }
+
+            @media (max-width:1250px){
+                width: 70%;
+            }
+        }
+
+        & .ePe__foto{
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+
+            @media (max-width:1250px){
+                width: 70%;
+            }
+        }
+
+        @media (max-width:1250px){
+            height: auto;
+            flex-direction: column;
+        }
+    }
+=======
+.ePe__contenedor{
+    background-image: linear-gradient(to bottom, $gradiente-1, $gradiente-4);
+    height: auto;
+
+    & .ePe__titulo{
+        @include titulo-seccion;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    & .ePe__contenido{
+        @include contenedor-flex (flex, row, auto, 100%, 100%);
+        @include cont-flex-layout(space-around, center, left);
+
+        & .ePe__texto{
+            width: 40%;
+            color: soften($color-contenido,5);
+            font-size: larger;
+            
+
+            & .disMouse{
+                color: darken($color-span,15);
+            }
+
+            & .fraseResaltada{
+                @include resaltarFrase(underline, none, italic);
+            }
+
+            @media (max-width:1250px){
+                width: 70%;
+            }
+        }
+
+        & .ePe__foto{
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+
+            @media (max-width:1250px){
+                width: 70%;
+            }
+        }
+
+        @media (max-width:1250px){
+            height: auto;
+            flex-direction: column;
+        }
+    }
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+@import '../base/variables';
+
+@keyframes rebotador-y{
+    0% {
+        transform: translateY(0%); 
+        color: $color-span;}
+    25% {
+        transform: translateY(20%); 
+        color: $color-span;}
+    50% {
+        transform: rtranslateY(0%); 
+        
+        color: $color-titulos;}
+    75% {
+        transform: translateY(-20%); 
+        color: $color-span;}
+    100% {
+        transform: rtranslateY(0%); 
+        color: $color-titulos;}
+=======
+@import '../base/variables';
+
+@keyframes rebotador-y{
+    0% {
+        transform: translateY(0%); 
+        color: $color-span;}
+    25% {
+        transform: translateY(20%); 
+        color: $color-span;}
+    50% {
+        transform: rtranslateY(0%); 
+        
+        color: $color-titulos;}
+    75% {
+        transform: translateY(-20%); 
+        color: $color-span;}
+    100% {
+        transform: rtranslateY(0%); 
+        color: $color-titulos;}
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

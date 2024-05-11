@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+@import '../base/variables';
+
+@for $count from 1 through 4 {
+    .caract#{$count} {
+        display: flex;
+        @if $count != 4{
+            background-image: linear-gradient(to bottom, map-get($colores-gradiente, gradiente-#{$count}), map-get($colores-gradiente, gradiente-#{$count+1}));
+        }
+        @else{ background-image: linear-gradient(to bottom, map-get($colores-gradiente, gradiente-#{$count}), $gradiente-1);}
+    }
+}
+
+.caract1{
+    & .container-md{
+        & .row{
+            & .seccion__titulo{
+                @include titulo-seccion;
+            }
+        }
+    }
+}
+
+[class*="--caracteristicas"]{
+    background-color: #d59648 !important;
+=======
+@import '../base/variables';
+
+@for $count from 1 through 4 {
+    .caract#{$count} {
+        display: flex;
+        @if $count != 4{
+            background-image: linear-gradient(to bottom, map-get($colores-gradiente, gradiente-#{$count}), map-get($colores-gradiente, gradiente-#{$count+1}));
+        }
+        @else{ background-image: linear-gradient(to bottom, map-get($colores-gradiente, gradiente-#{$count}), $gradiente-1);}
+    }
+}
+
+.caract1{
+    & .container-md{
+        & .row{
+            & .seccion__titulo{
+                @include titulo-seccion;
+            }
+        }
+    }
+}
+
+[class*="--caracteristicas"]{
+    background-color: #d59648 !important;
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

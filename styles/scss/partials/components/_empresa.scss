@@ -1,0 +1,126 @@
+<<<<<<< HEAD
+.empresa{
+    background-image: linear-gradient(to bottom, $gradiente-3, $gradiente-4);
+
+    & .seccion__titulo{
+        @include titulo-seccion;
+    }
+
+    & .empresa__contenido{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        & .empresa__texto{
+            width: 33%;
+            padding: 10px;
+
+            & .empresa__misionVision__titulo{
+                @include titulo-seccion;
+                color: $color-span;
+                font-size: 30px;
+            }
+
+            & .empresa__misionVision__texto{
+                color: $color-contenido;
+                font-weight: 900;
+                text-align: center;
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+            }
+        }
+
+        & .empresa__imagen{
+            width: 33%;
+
+            & .empresa__img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+
+                @media (max-width:1008px){
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+                display: flex;
+            }
+        }
+
+        @media (max-width:1008px){
+            flex-direction: column;
+        }
+    }
+
+=======
+.empresa{
+    background-image: linear-gradient(to bottom, $gradiente-3, $gradiente-4);
+
+    & .seccion__titulo{
+        @include titulo-seccion;
+    }
+
+    & .empresa__contenido{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        & .empresa__texto{
+            width: 33%;
+            padding: 10px;
+
+            & .empresa__misionVision__titulo{
+                @include titulo-seccion;
+                color: $color-span;
+                font-size: 30px;
+            }
+
+            & .empresa__misionVision__texto{
+                color: $color-contenido;
+                font-weight: 900;
+                text-align: center;
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+            }
+        }
+
+        & .empresa__imagen{
+            width: 33%;
+
+            & .empresa__img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+
+                @media (max-width:1008px){
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+                display: flex;
+            }
+        }
+
+        @media (max-width:1008px){
+            flex-direction: column;
+        }
+    }
+
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

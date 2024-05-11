@@ -1,0 +1,138 @@
+<<<<<<< HEAD
+@import '../base/mixins';
+
+.usuarios{
+    background-image: linear-gradient(to bottom,  $gradiente-2, $gradiente-3);
+
+    & .seccion__titulo{
+        @include titulo-seccion;
+    }
+
+    & .usuarios__contenido{
+        width: 80%;
+        margin: auto;
+        display: flex;
+
+        & .usuarios__texto{
+            @include contenedor-flex (flex, column, static, 50%, auto);
+            padding: 10px;
+            justify-content: center;
+
+            & .usuarios__parrafo{
+                color: $color-contenido;
+                font-weight: 900;
+
+                & span {
+                    @include disMouse;
+                }
+            }
+
+            & .usuarios__boton{
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                height: 25px;
+
+                & .usuarios__button{
+                    @include boton (50%, 100%, $color-contenido, none, 50px, $color-span, 700);
+                }
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+                order: 2;
+                text-align: center;
+            }
+        }
+
+        & .usuarios__imagen{
+            width: 50%;
+            padding: 10px;
+
+            & .usuarios__img{
+                object-fit: cover;
+                width: 100%;
+            }
+
+            @media (max-width:1008px){
+                width: 50%;
+            }
+        }
+
+        @media (max-width:1008px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+=======
+@import '../base/mixins';
+
+.usuarios{
+    background-image: linear-gradient(to bottom,  $gradiente-2, $gradiente-3);
+
+    & .seccion__titulo{
+        @include titulo-seccion;
+    }
+
+    & .usuarios__contenido{
+        width: 80%;
+        margin: auto;
+        display: flex;
+
+        & .usuarios__texto{
+            @include contenedor-flex (flex, column, static, 50%, auto);
+            padding: 10px;
+            justify-content: center;
+
+            & .usuarios__parrafo{
+                color: $color-contenido;
+                font-weight: 900;
+
+                & span {
+                    @include disMouse;
+                }
+            }
+
+            & .usuarios__boton{
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                height: 25px;
+
+                & .usuarios__button{
+                    @include boton (50%, 100%, $color-contenido, none, 50px, $color-span, 700);
+                }
+            }
+
+            @media (max-width:1008px){
+                width: 100%;
+                order: 2;
+                text-align: center;
+            }
+        }
+
+        & .usuarios__imagen{
+            width: 50%;
+            padding: 10px;
+
+            & .usuarios__img{
+                object-fit: cover;
+                width: 100%;
+            }
+
+            @media (max-width:1008px){
+                width: 50%;
+            }
+        }
+
+        @media (max-width:1008px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

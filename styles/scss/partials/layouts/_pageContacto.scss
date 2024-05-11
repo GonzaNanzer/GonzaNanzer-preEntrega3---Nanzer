@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+.contacto{
+    background-image: linear-gradient($gradiente-1, $gradiente-2);
+    display: flex;
+    justify-content: center;
+
+    & .contacto__imagen{
+        @include contenedor-flex (flex, column, relative, 80%, 60vh);
+        justify-content: center;
+        margin: 15px;
+
+        & .contacto__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include elemento-absolute(10px, 0px, 0px, 0px, 0px, auto);
+        }
+
+        & .contacto__transparencia{
+            background-color: rgba(114, 114, 97, 0.301);
+            @include elemento-absolute(10px, 0px, 0px, 0px, 0px, 2);
+        }
+    }
+=======
+.contacto{
+    background-image: linear-gradient($gradiente-1, $gradiente-2);
+    display: flex;
+    justify-content: center;
+
+    & .contacto__imagen{
+        @include contenedor-flex (flex, column, relative, 80%, 60vh);
+        justify-content: center;
+        margin: 15px;
+
+        & .contacto__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include elemento-absolute(10px, 0px, 0px, 0px, 0px, auto);
+        }
+
+        & .contacto__transparencia{
+            background-color: rgba(114, 114, 97, 0.301);
+            @include elemento-absolute(10px, 0px, 0px, 0px, 0px, 2);
+        }
+    }
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}

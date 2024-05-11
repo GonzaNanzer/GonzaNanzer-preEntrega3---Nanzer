@@ -1,0 +1,92 @@
+<<<<<<< HEAD
+@import '../base/animations';
+
+.main{
+    position: relative;
+
+    & .main__VideoContainer{
+        @include contenedor-flex(flex, row, relative, 100%, 100%);
+
+        & .main__video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .main__transparencia{
+        @include contenedor-flex(flex, auto, absolute, auto, auto);
+        inset: 0px 0px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.558);
+        z-index: 2;
+        @include cont-flex-layout(center, center, auto);
+
+        & .main__TextContainer{
+            position: relative;
+            text-align: center;
+
+            & .main__tituloPrincipal{
+                @include titulos-ppal($color-titulos, 6vw);
+            }
+
+            & .main__subTitPpal{
+                @include titulos-ppal($color-titulos, 3vw);
+            }
+
+            & span{
+                display: inline-block;
+                animation-name: rebotador-y;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+
+            }
+        }
+    }
+=======
+@import '../base/animations';
+
+.main{
+    position: relative;
+
+    & .main__VideoContainer{
+        @include contenedor-flex(flex, row, relative, 100%, 100%);
+
+        & .main__video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .main__transparencia{
+        @include contenedor-flex(flex, auto, absolute, auto, auto);
+        inset: 0px 0px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.558);
+        z-index: 2;
+        @include cont-flex-layout(center, center, auto);
+
+        & .main__TextContainer{
+            position: relative;
+            text-align: center;
+
+            & .main__tituloPrincipal{
+                @include titulos-ppal($color-titulos, 6vw);
+            }
+
+            & .main__subTitPpal{
+                @include titulos-ppal($color-titulos, 3vw);
+            }
+
+            & span{
+                display: inline-block;
+                animation-name: rebotador-y;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+
+            }
+        }
+    }
+>>>>>>> 402843504df98ee250c48897849af4ce2494f494
+}
